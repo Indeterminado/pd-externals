@@ -1,0 +1,28 @@
+#N canvas 572 436 389 255 10;
+#X obj 85 125 seqBang 5, f 27;
+#X obj 85 85 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 85 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 124 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 164 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 204 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 244 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 244 85 3;
+#X text 9 214 Created by Alexandre Clément 2015 Ideas \, feedback
+and any communication: alexandre.r.clement@gmail.com;
+#X text 9 9 Outputs received input sequentially out created outlets.
+First inlet receives the content \, second inlet sets active outlet
+(ignoring sequence). Takes 1 float argument for number of outlets.
+;
+#X connect 0 0 2 0;
+#X connect 0 1 3 0;
+#X connect 0 2 4 0;
+#X connect 0 3 5 0;
+#X connect 0 4 6 0;
+#X connect 1 0 0 0;
+#X connect 7 0 0 1;
